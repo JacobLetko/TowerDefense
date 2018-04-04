@@ -26,7 +26,10 @@ public class Shooting : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        attakers.Add(other.gameObject);
+        if (other.gameObject.tag == "Enemy")
+        {
+            attakers.Add(other.gameObject);
+        }
         shoot.target = attakers[0];
     }
 
