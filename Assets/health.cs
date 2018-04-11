@@ -21,8 +21,6 @@ public class health : MonoBehaviour
         }
     }
 
-    public Shooting shoot;
-
     public int startingHealth;
 
     private void Awake()
